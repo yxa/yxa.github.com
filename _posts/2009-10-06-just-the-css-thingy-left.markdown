@@ -1,3 +1,9 @@
+---
+layout: posts
+title: First Post
+---
+
+
 added
 
 - atom feed
