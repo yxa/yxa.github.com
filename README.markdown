@@ -14,9 +14,9 @@ you want one to?
 
 google these words
 
-*jekyll
-*liquid
-*github pages
-*markdown
+*  jekyll
+*  liquid
+*  github pages
+*  markdown
 
 
