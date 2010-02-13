@@ -1,10 +1,11 @@
 ---
 layout: default
-title: playing with jekyll 
+title: playing with jekyll
+meta_keywords: web development, and other rantings
+meta_description: sandbox, and internet playing grounds of Torbjorn Josefsson
 ---
 
 {% for post in site.posts limit:5 %}
-  <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-  <em>Posted on {{ post.date | date_to_long_string }}.</em>
+ <h2><p><strong>{{ post.date | date_to_string }}</strong> >> <a href="{{ post.url }}">{{ post.title }}</a></h2>
 {% endfor %}
 

@@ -1,17 +1,51 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
 	"http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
-	<head>
-		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-		<title>{{ page.title }}</title>
-		<meta name="author" content="Torbjorn Josefsson">
-		<link rel="stylesheet" href="/stylesheets/syntax.css" type="text/css">
-	</head>
+<head>
+    <link rel="stylesheet" href="/stylesheets/blueprint/screen.css" type="text/css" media="screen" projection>
+	<link rel="stylesheet" href="/stylesheets/blueprint/print.css" type="text/css" media="print">
+	<link rel="stylesheet" href="/stylesheets/blueprint/plugins/fancy-type/screen.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="/stylesheets/blueprint/plugins/link-icons/screen.css" type="text/css" media="screen, projection">
+	<!--[if lt IE 8]><link rel="stylesheet" href="/stylesheets/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	  $(document).ready(function() {
+	    // This is more like it!
+	  });
+	</script>
 
-	<body id="playing-with-jekyll" class="post">
-		{{ content }}
-    	<div id="disqus_thread"></div>
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" /> 
+	{% if page.meta_keywords %}<meta name="keywords" content="{{ page.meta_keywords }}" />{% endif %}
+    {% if page.meta_description %}<meta name="description" content="{{ page.meta_description }}" />{% endif %}
+	<meta name="author" content="Torbjorn Josefsson" />
 
-    	<script type="text/javascript" src="http://disqus.com/forums/playingwithjekyll/embed.js"></script>
+	<title>{{ page.title }}</title>
+  </head>
+	
+	<div class="container">
+		<div id="headerr" class="span-24 last">
+			<h1 id="title">
+				<a href="/" >take me home....</a>
+			</h1>
+		</div>
+		<hr>
+		
+		<body id="playing-with-jekyll" class="post">
+			{{ content }}
+		<div id="disqus_thread"></div>
+		<script type="text/javascript" src="http://disqus.com/forums/playingwithjekyll/embed.js"></script>
+	</div>
+	
+	
+		<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' 												type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+		try {
+		var pageTracker = _gat._getTracker("UA-12762645-1");
+		pageTracker._trackPageview();
+		} catch(err) {}</script>
+	
 	</body>
 </html>

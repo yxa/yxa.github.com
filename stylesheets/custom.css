@@ -1,0 +1,8 @@
+a#feed {
+  padding:2px 22px 2px 0;
+  margin:-2px 0;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+a#feed  { background-image: url(blueprint/plugins/link-icons/icons/feed.png); }
